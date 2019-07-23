@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+
+
+/* nav */
+.nav-items a {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 10px 15px;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* General section style */
+a {
+    color: #000;
+    text-decoration: none
+}
+a:hover {
+    color: #db284e;
+}
+.section-title h2 {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 22px;
+    color: #000;
+    margin: 5px 0;
+}
+
+.section-title h4 {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    -webkit-letter-spacing: normal;
+    -moz-letter-spacing: normal;
+    -ms-letter-spacing: normal;
+    letter-spacing: normal;
+    color: #9b9b9b;
+    margin: 5px 0px;
+}
+
+/* Editor Choice Stlye */
+.nav-menu, .container-item {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.item {
+    display: flex;
+    flex-flow: column;
+    word-break: break-word;
+}
+.editor-choice-item-container {
+    width: 15%;
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    min-height: 351px;
+    margin: 10px 20px 10px 0px;
+}
+.editor-name {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4a4a4a;
+    margin: 3px 0 0 0;
+}
+.editor-role {
+    font-family: Roboto;
+    font-size: 12px;
+    color: #9b9b9b;
+    margin: 5px 0 0 0;
+}
+.eci-img-container {
+    width: 140px;
+    height: 177px;
+    flex-shrink: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    flex-shrink: 0;
+    margin: 0 auto;
+}
+.eci-product-image{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* star rating */
+.star-rating-container {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+.star-rating-container::before {
+    display:block;
+    font-size:100%;
+    top:0;
+    left:0;
+    font-family: FontAwesome;
+    content: "\f005\f005\f005\f005\f005";
+    color: #818181;
+    text-shadow: 0 2px darken(#818181,20%);
+    padding-left:5px;
+}
+.star-rating-container span {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    display:block;
+    overflow:hidden;
+}
+.star-rating-container span::before {
+    font-size:100%;
+      font-family: FontAwesome;
+      color: #db284e;
+      position: absolute;
+      left: 0;
+      top:0;
+      content:"\f005\f005\f005\f005\f005";
+      text-shadow: 0 1px darken(#db284e, 20%);
+      display:block;
+      padding-left:5px;
+}
+
+/* article */
+.article-container {
+    width: 29%;
+}
+
+.article-container {
+    margin: 0 45px 30px 0;
+}
+
+.article-card img {
+    width: 100%;
+    border-radius: 8px
+}
+
+.article-title {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+    margin: 20px 0 0 0;
+}
+
+.article-author {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    color: #9b9b9b;
+    margin: 5px 0 0 0;
+}
+
+.article-author a {
+    color: #4a4a4a;
+}
+
+/* review */
+.review-container {
+    width: 30%;
+}
