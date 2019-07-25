@@ -2,10 +2,12 @@
   "name": "fd-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://github.com/natsumiaya/fd-frontend",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "node ./node_modules/vue-gh-pages/index.js -p --branch gh-pages"
   },
   "dependencies": {
     "axios": "^0.19.0",
