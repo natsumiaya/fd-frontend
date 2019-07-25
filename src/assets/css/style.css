@@ -34,6 +34,11 @@ html, body {
   }
 
 /* topbar */
+.page-header {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+}
 .top-bar {
     display: flex;
     flex-direction: row;
@@ -111,10 +116,14 @@ html, body {
 .top-bar-login a:hover {
     color: #fff
 }
+
+.content {
+    padding-top: 150px;
+}
+
 /* nav */
 .navbar-container {
     border-bottom: 0.5px solid #e0e0e0;
-    margin-bottom: 50px;
 }
 .nav-menu {
     padding: 0;
@@ -206,6 +215,19 @@ img {
     flex-flow: column;
     word-break: break-word;
 }
+
+.section-title-split {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-title-split a {
+    color: #db284e;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
 .editor-choice-item-container {
     width: 20%;
     background-color: #fff;

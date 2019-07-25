@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="home content">
     <AdsBox text="TOP+FRAME+banner+970x50" height='50' width='970'/>
     <AdsBox text="BILLBOARD+banner+970x250" height='250' width='970'/>
     <div class="editor-choice-section container">
@@ -26,7 +26,10 @@
     <div class="latest-article-section container">
         <div class="section-title">
             <h2>Latest Articles</h2>
-            <h4>Unravel more beauty</h4>
+            <div class="section-title-split">
+                <h4>Unravel more beauty</h4>
+                <a>See more <i class="fa fa-angle-right"></i></a>
+            </div>
         </div>
         <div class="latest-article container-item">
             <div class="article-container item" v-for="(items,index) in this.$store.state.datahome.latest_articles">
@@ -37,7 +40,10 @@
     <div class="latest-review-section container">
         <div class="section-title">
             <h2>Latest Reviews</h2>
-            <h4>So you can make better purchase decision</h4>
+            <div class="section-title-split">
+                <h4>So you can make better purchase decision</h4>
+                <a>See more <i class="fa fa-angle-right"></i></a>
+            </div>
         </div>
         <div class="latest-review container-item">
             <div class="review-container item" v-for="(items,index) in this.$store.state.datahome.latest_review">
